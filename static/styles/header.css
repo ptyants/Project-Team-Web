@@ -1,0 +1,24 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.header_logo {
+    display: flex;
+    /* flex-direction: column; Sử dụng flex-direction là row để căn giữa theo chiều ngang */
+    align-items: center; 
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Thiết lập kích thước của logo */
+#header_img {
+    width: 50px; /* Điều chỉnh chiều rộng của logo */
+    height: auto; /* Chiều cao tự động tính theo tỉ lệ */
+    margin-right: 10px; /* Khoảng cách phía bên phải của logo */
+}
+
+/* Thiết lập kiểu dáng cho navbar */
+.navbar {
+    padding: 10px 0; /* Khoảng cách phía trên và dưới của navbar */
+}

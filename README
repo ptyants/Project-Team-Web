@@ -1,0 +1,26 @@
+Yêu cầu về việc quản lí tên file
++ template (chứa tất cả các phần của nhóm)
+    + index (Trang chủ)
+    + members (Thành viên)
+    + event (sự kiện nhóm)
+    + ourService (dịch vụ)
+    + product (sản phẩm)
+
++ static (chứa tất cả các file tĩnh như hình, các file .CSS)
+    + images (chứa tất cả các hình) 
+    + styles (chứa tất cả các file .CSS)
+
+Tất cả các file css phải được đặt tên trùng với tên file html của phần mình đang làm
+Vd: bạn đang làm file index.html thì khi bạn muốn style bằng file css 
+    thì phải đặt tên file là index.css và đặt trong thư mục styles
+
+Việc bạn style ở trong file hay ngoài file thì tùy bạn, không bắt buộc
+
+Lưu ý: 
++ Các file ngoài file bạn đảm nhiệm sẽ không được xóa hay thay đổi.
+    Điều này sẽ giúp cho việc merch file trong git sau này được thuận tiện hơn cho cả dự án!
++ Không được xóa dòng 
+    <script src="../header.js"></script>
+    <script src="../footer.js"></script>
+    Nó sẽ ảnh hưởng đến thanh navbar của nhóm
+    Các phần còn lại trong <body> thì bạn có thể xóa tùy ý bạn
