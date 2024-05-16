@@ -19,7 +19,7 @@ const headerHTML = `
             <div class="container-fluid">
                 <div class="header_logo">
                     <img id="header_img" src="../static/images/pj_logo.png" alt="Đội dự án - Logo" />
-                    <a class="navbar-brand" href="https://github.com/ptyants">Đội dự án</a>
+                    <a class="navbar-brand" href="https://github.com/ptyants/Project-Team-Web">Đội dự án</a>
                 </div>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
