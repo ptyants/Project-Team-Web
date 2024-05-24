@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Thiết kế web đơn giản</title>
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="../static/styles/ourService.css">
+    <!-- Bootstrap CSS link getboottrap.com -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../static/styles/header.css">
+    <link rel="stylesheet" href="../static/styles/footer.css"/>
+</head>
+
+<body>
+    <script src="../header.js"></script>
+    <div class="row mt-2">
+        <!-- thanh bên trái -->
+        <div class="col-lg-3">
+            <img src="../static/images/crweb.png" alt="crweb" width="300px">
+        </div>
+        <!-- thanh bên phải -->
+        <div class="col-lg-9">
+            <h2 class="text-warning-emphasis">Thiết kế web đơn giản</h2>
+            <p class="rgb-text" style="font-size: 25px;">75,000<u>đ</u></p><!--text-danger: màu đỏ-->
+            <!-- thanh tab -->
+            <div>
+                <ul class="menu nav nav-tabs" id="myTab" role="tablist">
+                    <!-- thanh tab 1 -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Mô tả</button>
+                    </li>
+                    <!-- thanh tab 2 -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Đánh giá</button>
+                    </li>
+                    <!-- thanh tab 3 -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Liên hệ</button>
+                    </li>
+                </ul>
+                <!-- nội dung tab 1 -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <p>Thiết kế web đơn giản là dịch vụ thiết kế web cơ bản, phù hợp với các doanh nghiệp nhỏ, cá
+                            nhân, cửa hàng online,...</p>
+                        <p>Đặc điểm:</p>
+                        <ul>
+                            <li>Thiết kế web đơn giản, dễ sử dụng</li>
+                            <li>Thời gian hoàn thành nhanh chóng</li>
+                            <li>Giá cả hợp lý</li>
+                        </ul>
+                    </div>
+                    <!-- nội dung tab 2 -->
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <p>Đánh giá của khách hàng:</p>
+                        <ul>
+                            <li>Chất lượng dịch vụ tốt</li>
+                            <li>Thời gian hoàn thành nhanh chóng</li>
+                            <li>Giá cả hợp lý</li>
+                        </ul>
+                    </div>
+                    <!-- nội dung tab 3 -->
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        đây là nội dung liên hệ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../footer.js"></script>
+    <!-- Bootstrap JS link getbootstrap.com -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

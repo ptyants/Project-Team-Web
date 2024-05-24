@@ -1,0 +1,45 @@
+/* gạch chân */
+.underlined {
+    border-bottom: 1px solid #000; 
+    padding-bottom: 5px;
+    margin-bottom: 20px; 
+}
+/* nháy màu rgb */
+.rgb-text {
+    animation: colorChange 3s linear infinite;
+  }
+  
+  @keyframes colorChange {
+    0%, 100% {
+      color: rgb(255, 0, 0); /* Đỏ */
+    }
+    25% {
+      color: rgb(0, 255, 0); /* Xanh */
+    }
+    50% {
+      color: rgb(128, 0, 128); /* Tím */
+    }
+    75% {
+      color: rgb(255, 255, 0); /* Vàng */
+    }
+  }
+  /* màu chữ */
+
+/* màu chữ thay đổi khi di chuyển chuột vào chữ */
+.menu>li>button:hover
+{
+    color: #e90b68;
+}
+.menu:hover
+{
+    color: #0b3be9;
+}
+/*Dòng thông báo giỏ hàng*/
+.top-header
+{
+  position: fixed; text-align: center; width: 100%; top: 0;
+}
+.bot
+{
+  margin-top: 230px;
+}
