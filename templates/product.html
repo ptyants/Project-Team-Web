@@ -4,28 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../static/styles/header.css">
-    <link rel="stylesheet" href="../static/styles/footer.css"/>
+    <link rel="stylesheet" href="../static/styles/footer.css" />
+    <link rel="stylesheet" href="../static/styles/product.css">
+
+    <!-- link to use fa icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- -->
 
     <title>Các sản phẩm - Đội dự án</title>
-    
+
 </head>
 
 <body>
     <script src="../header.js"></script>
 
-    <h1>Các sản phẩm - Đội dự án</h1>
-
     <!-- Bổ sung các nội dung khác của trang Sản phẩm -->
-    
+    <section class="container my-5 " style="min-height: 100vh;">
+        <h1 class="text-center mb-5">Các sản phẩm - Đội dự án</h1>
+        <div class="row d-flex justify-content-center"
+            style="align-items: center; display: flex; justify-content: center;">
+            <div class="product-item-container  col-lg-3 space-border">
+                <div class="image-circle-container">
+                    <img class="img-small zoom-hover"
+                        src="../static/images/coffee-app-img.png"
+                        alt="image product">
+                </div>
+                <div class="text-center mt-3">
+                    <h4 class="">Ứng Dụng Bán Cà Phê</h4>
+                    <p class="" style="font-size: 16px; font-weight: 400;">Thành Viên: Lê Tiến Dũng</p>
+                    <div class="icon-container ">
+                        <div class="icon-item display-none">
+                            <a href="https://github.com/Yuryii/Coffee-App">
+                                <i class="fa fa-github icon" aria-hidden="true" style="font-size: 24px;"></i>
+                            </a>
+                        </div>
+                        <div class="icon-item display-none">
+                            <a href="https://www.facebook.com/letien.dung.372">
+                                <i class="fa fa-facebook icon" aria-hidden="true" style="font-size: 24px;"></i>
+                            </a>
+                        </div>
+                        <div class="icon-item display-none">
+                            <a href="https://youtu.be/5dKF_HGpKDI?si=-wtNBQbWiNspmI77">
+                                <i class="fa fa-youtube-play icon" aria-hidden="true" style="font-size: 24px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div type="button" data-bs-toggle="modal" data-bs-target="#leTienDungModal"
+                    class="button-detail mt-3 display-none text-white">
+                    Xem chi tiết
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="leTienDungModal">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title">Chi Tiết Ứng Dụng</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="img-play-container text-center">
+                            <img src="../static/images/product-letiendung.png" alt="" class="image-product">
+                            <button type="button" class="icon-play"
+                                onclick="playVideo('../static/images/demo-yuryicoffeeapp.mp4')" data-bs-dismiss="modal">
+                                <i class=" fa fa-play-circle " aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <h4 class="mt-3">Ứng dụng bán cà phê</h4>
+                            <p>Trong thời đại số hóa ngày nay, việc mua sắm trực tuyến đang trở thành xu hướng phổ biến,
+                                và ngành công nghiệp cà phê không phải là ngoại lệ. Để đáp ứng nhu cầu ngày càng tăng
+                                của khách hàng, các ứng dụng mua cà phê trực tuyến đang trỗi dậy, mang lại sự tiện lợi
+                                và trải nghiệm mua sắm mới mẻ.
+                                Ứng dụng mua cà phê online là một nền tảng kết nối giữa người tiêu dùng và các cửa hàng
+                                cà phê, cung cấp một loạt các chức năng để người dùng có thể dễ dàng tìm kiếm, mua sắm
+                                và tận hưởng sản phẩm cà phê yêu thích của họ.
+                            </p>
+                            <p>Mục đích chính của ứng dụng là cung cấp một nền tảng thuận tiện và đa dạng để người dùng
+                                có thể tìm kiếm, xem xét và mua các loại cà phê phong phú từ nhiều nguồn khác nhau. Các
+                                lợi ích chính của việc sử dụng ứng dụng bao gồm:</p>
+                            <p>Đa Dạng Sản Phẩm: Ứng dụng cung cấp một loạt các loại cà phê từ các nhà cung cấp và cửa
+                                hàng cà phê địa phương khác nhau, từ cà phê hạt nguyên chất đến cà phê pha sẵn, từ cà
+                                phê Việt Nam truyền thống đến cà phê quốc tế.</p>
+                            <p>Tiện Ích và Trải Nghiệm Người Dùng: Từ việc đăng ký, tìm kiếm sản phẩm, đặt hàng, thanh
+                                toán đến việc xem lịch sử mua hàng và đánh giá sản phẩm, ứng dụng tập trung vào việc tối
+                                ưu hóa trải nghiệm người dùng để mang lại sự thuận tiện và hài lòng cao nhất.
+
+                                Ngoài ra, ứng dụng còn giúp người bán dễ dàng quản lí cà phê trong quán với các chức
+                                năng thêm loại sản phẩm trong quán.
+                            </p>
+                            <p>Thiết sót trong ứng dụng: </p>
+                            <p> Bởi vì không đủ thời gian nên ứng dụng vẫn còn nhiều thiếu sót như: <br>
+                                - Chưa thể phân quyền giữa người bán và người mua. <br>
+                                - Các chức năng quản lí của người bạn.
+                            </p>
+                            <p> Nhưng dù sao đi nữa, ứng dụng cũng đã hoàn thiện các chức năng cơ bản thiết yếu cho
+                                người mua hàng khi cho phép nhiều user đăng nhập và sử dụng.</p>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="video-player">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="../static/images/demo-YuryiCoffeeApp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button type="button" class="button-close-video" onclick="stopVideo()">
+            <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </button>
+    </div>
+    <script>
+        var videoPlayer = document.querySelector('.video-player');
+        var myVideo = document.querySelector('#myVideo');
+        stopVideo = () => {
+            videoPlayer.style.display = 'none';
+            myVideo.pause();
+        }
+        playVideo = (src) => {
+            myVideo.src = src;
+            videoPlayer.style.display = 'block';
+            myVideo.play();
+
+        }
+    </script>
     <script src="../footer.js"></script>
-    
+
 </body>
 
 </html>

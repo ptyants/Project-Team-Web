@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-small {
+    width: 100%;
+    height: 100%;
+}
+
+.product-item-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(218, 234, 238);
+    border-radius: 130px;
+}
+
+.image-circle-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.zoom-hover:hover {
+    transform: scale(1.5);
+    transition: transform .2s;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+}
+
+.icon-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(172, 213, 225);
+    width: 17%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.icon-item:hover {
+    background-color: rgb(141, 201, 220);
+}
+
+.icon {
+    font-size: 24px;
+    color: black;
+}
+
+.button-detail {
+    background-color: rgb(136, 198, 217);
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.button-detail:hover {
+    background-color: rgb(105, 188, 213);
+}
+
+.display-none {
+    display: none;
+}
+
+.product-item-container:hover .button-detail {
+    display: block;
+}
+
+.product-item-container:hover .icon-item {
+    display: block;
+}
+
+.space-border {
+    border: 15px solid white;
+}
+
+.image-product {
+    width: 100%;
+}
+
+.img-play-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .img-play-container {
+        font-size: 50px;
+    }
+
+}
+
+.icon-play {
+    position: absolute;
+    color: rgb(110, 162, 227);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.video-player {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.video-player:focus {
+    outline: none;
+}
+.button-close-video {
+    font-size: 50px;
+    position: absolute;
+    right: 20px;;
+    border: none;
+    background-color: transparent;
+    color: rgb(110, 162, 227);
+    cursor: pointer;
+}
+.button-close-video:hover {
+    color: rgb(80, 142, 197);
+}
+div p {
+    font-size: 20px;
+}
